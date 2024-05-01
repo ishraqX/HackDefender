@@ -1,0 +1,14 @@
+{
+    "name": "HackDefender",
+    "version": "1.0.0",
+    "description": "Verify if your password is compromised or not. Made by Ishraq",
+    "manifest_version": 2,
+    "icons": {
+        "128": "icon-128.png"
+    },
+    "author": "Ishraq Uddin Chowdhury",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "HackDefender by ishraq"
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HackDefender</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="style/bgstyle.css" />
+</head>
+<body>
+  <canvas id="matrix" style="display: none;"></canvas>
+
+  <div class="container" id="content" style="display: none;"> <!-- Initially hidden -->
+    <h2>Welcome to</h2>
+    <h1>HackDefender</h1>
+    <h3>Created by <br> Ishraq Uddin Chowdhury</h3>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button id="checkButton"><b>Check</b></button>
+    <button id="decryptButton"><b>Decrypt Password</b></button>
+    <p id="result"></p>
+    <div id="loading" class="loading"></div> <!-- Loading animation -->
+ 
+
+	
+ </div>
+  
+  <!-- Footer section -->
+ 
+  <footer>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+    <p>University of Information Technology & Sciences<br />Software Project Design and Development</p>
+	</footer>
+ 
+
+  <script src="script/matrix.js"></script>
+  <script src="script/sha1.js"></script>
+  <script src="script/popup.js"></script>
+  <script>
+    // Function to fade in content and drop to middle
+    function fadeInContent() {
+      var content = document.getElementById('content');
+      content.style.display = 'block'; // Display the content
+      content.style.opacity = '0'; // Set initial opacity to 0
+      content.style.transform = 'translateY(-100px)'; // Set initial position above
+
+      // Animate the content opacity and drop to middle
+      content.style.transition = 'opacity 1s ease-in-out, transform 1s ease-in-out';
+      setTimeout(function() {
+        content.style.opacity = '1'; // Set opacity to 1 after 3 seconds
+        content.style.transform = 'translateY(0)'; // Set position to the middle
+      }, 3000);
+    }
+	
+	// Function to handle click on Decrypt Password button
+    document.getElementById('decryptButton').addEventListener('click', function() {
+      alert('Thanks for your time. This function is Coming Soon. please free to contact Admin. 👉🏻 ishraq.cyberspace@gmail.com 👈🏻'); // Display alert when Decrypt Password button is clicked
+    });
+	
+	
+
+    // Delay the canvas loading by 3 seconds
+    setTimeout(function() {
+      document.getElementById('matrix').style.display = 'block'; // Display the canvas after 3 seconds
+      fadeInContent(); // Fade in the content and drop to middle after the canvas loads
+    }, 10); // Changed the delay to 3000 milliseconds
+  </script>
+</body>
+</html>
