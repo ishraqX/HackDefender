@@ -10,7 +10,7 @@ canvas.height = height;
 const fontSize = 16;
 const columns = canvas.width/fontSize;
 const drops = [];
-const specificText = ['HACK', 'ISHRAQ', 'UITS','PWNED'];
+const specificText = ['HACK', 'ISHRAQ', 'UITS','PWNED','secrets','Crime'];
 
 for (let x = 0; x < columns; x++) {
   drops[x] = 1;
@@ -46,4 +46,4 @@ function randomChar() {
   return alphabet[Math.floor(Math.random() * alphabet.length)];
 }
 
-setInterval(draw, 60);
+setInterval(draw, 80);
