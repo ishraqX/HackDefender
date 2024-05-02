@@ -1,6 +1,6 @@
 # HackDefender
 "Prevention is better than cure".
-Brutforce is very common and effective way to get someone ones passwords. so we can prevent it by making password unique and strong. 
+Brutforce is very common and effective way to get someones passwords. so we can prevent it by making password unique and strong. 
 
 Q.How we make sure our password safe?
 
