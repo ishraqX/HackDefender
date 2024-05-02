@@ -9,7 +9,7 @@
   transform: translate(-50%, -50%);
   width: 100px; /* Adjust the width of the loading animation container */
   height: 100px; /* Adjust the height of the loading animation container */
-  background: url('asset/load.gif') center center no-repeat; /* Set the GIF as the background */
+  background: url('load.gif') center center no-repeat; /* Set the GIF as the background */
   background-size: contain; /* Ensure the background covers the container */
   animation: fadeInOut 10s linear infinite; /* Apply the fade-in-out animation with a duration of 10 seconds */
 }
