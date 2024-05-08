@@ -1,3 +1,125 @@
 /* style.css */
 
-button,h1,h2{color:#fff}#result,body{background-color:#f0f0f0}#result,button{margin-top:10px}.loading{display:none;position:absolute;top:70%;left:50%;transform:translate(-50%,-50%);width:100px;height:100px;background:url('load.gif') center center/contain no-repeat;animation:10s linear infinite fadeInOut}@keyframes fadeInOut{0%,100%{opacity:0}50%{opacity:1}}body{font-family:Arial,sans-serif}.container{border-radius:40px;box-shadow:0 0 10px rgba(0,0,0,.1);margin:auto;padding-top:180px;padding-left:20px;width:300px}.container2{background-color:#0e6c002e;padding-bottom:20px;width:300px}footer{position:fixed;text-align:center}h1{background-color:#4caf50;border-radius:5px 5px 0 0;font-size:35px;margin:-20px -20px 10px;padding:10px;text-align:center}h2,h3{border-radius:5px 5px 0 0;font-size:15px;margin:-20px -20px 10px;background-color:#4caf50;padding:10px;text-align:center}h3{color:#000}input{border:3px solid #ddd;border-radius:21px;padding:4px;width:100%}button{background-color:#4caf50;border:none;border-radius:5px;padding:10px;width:100%}button:hover{background-color:#45a049}#result{border-radius:5px;color:#4caf50;font-size:18px;text-align:center}#passwordContainer{display:flex;align-items:center}#showPasswordCheckboxContainer{margin-left:5px;display:flex;align-items:center}
+
+.loading {
+  display: none; /* Initially hide the loading animation */
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Adjust the width of the loading animation container */
+  height: 100px; /* Adjust the height of the loading animation container */
+  background: url('load.gif') center center no-repeat; /* Set the GIF as the background */
+  background-size: contain; /* Ensure the background covers the container */
+  animation: fadeInOut 10s linear infinite; /* Apply the fade-in-out animation with a duration of 10 seconds */
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; } /* Start and end with opacity 0 */
+  50% { opacity: 1; } /* 50% of the animation time, opacity is 1 */
+}
+
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+ 
+  
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin:auto;
+ padding-top: 180px;
+ padding-left: 20px;
+ 
+  width: 300px;
+}
+.container2 {
+  background-color: #0e6c002e;
+  padding-bottom: 20px;
+ 
+  width: 300px;
+}
+
+
+
+footer {
+	position: fixed;
+      text-align: center;
+    }
+h1 {
+  background-color: #4CAF50;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  font-size: 35px;
+  margin: -20px -20px 10px -20px;
+  padding: 10px;
+  text-align: center;
+}
+h2 {
+  background-color: #4CAF50;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  font-size: 15px;
+  margin: -20px -20px 10px -20px;
+  padding: 10px;
+  text-align: center;
+}
+h3 {
+  background-color: #4CAF50;
+  border-radius: 5px 5px 0px 0px;
+  color: black;
+  font-size: 15px;
+  margin: -20px -20px 10px -20px;
+  padding: 10px;
+  text-align: center;
+}
+
+input {
+  border: 3px solid #ddd;
+    border-radius: 21px;
+    padding: 4px;
+    width: 100%;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  background-color: #f0f0f0;
+  
+  border-radius: 5px;
+  color: #4CAF50;
+  font-size: 18px;
+  margin-top: 10px;
+  
+  text-align: center;
+}
+
+/* Style for the container holding password input field and checkbox */
+#passwordContainer {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+
+
+/* Style for the checkbox container */
+#showPasswordCheckboxContainer {
+  margin-left: 5px; /* Add some spacing between input field and checkbox */
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
